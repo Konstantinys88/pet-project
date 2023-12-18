@@ -1,12 +1,18 @@
+@use '../../styles/variables.scss' as variable;
+
 .header {
     background: rgb(0, 0, 0, 0.1);
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #22dff8;
+    color: variable.$main-color;
+    &__logo {
+        &_text {
+            font-size: 26px;
+        }
+    }
 
-    
 
     &__navbar {
         display: flex;
