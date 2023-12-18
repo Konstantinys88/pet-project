@@ -1,5 +1,5 @@
 .home {
-    height: 80%;
+    height: calc(100% - 80px);
 
     &__wrapper {
         min-height: 100%;
