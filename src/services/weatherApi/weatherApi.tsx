@@ -35,7 +35,7 @@ const weatherApi = () => {
             tempMin: Math.round(res.data.list[date].main.temp_min), 
             tempMax: Math.round(res.data.list[date].main.temp_max), 
             pressure: res.data.list[date].main.pressure, 
-            grnd: res.data.list[date].main.grnd_level, 
+            grnd: Math.round(res.data.list[date].main.grnd_level * 0.750064), //переводит в мрт и округляет
             humidity: res.data.list[date].main.humidity, 
             clouds: res.data.list[date].clouds.all,
             wingSpeed: res.data.list[date].wind.speed,

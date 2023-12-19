@@ -1,0 +1,52 @@
+.weatherHeader {
+    max-height: 250px;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+
+    padding: 10px;
+    color: black;
+
+    display: flex;
+    justify-content: space-around;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+
+    &__list {
+        text-align: center;
+
+        &_temp {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+
+    &__item {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+
+        &_icon {
+            max-width: 200px;
+            width: 100%;
+            max-height: 200px;
+            height: 100%;
+        }
+    }
+}
