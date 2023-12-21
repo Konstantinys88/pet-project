@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import { Inter, Roboto } from 'next/font/google';
 import './globals.scss';
@@ -19,14 +20,15 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
+
 			<body className={roboto.className}>
 				<Header />
 				<main className='container'>
 					{children}
 				</main>
 				<Footer />
-
 			</body>
+
 		</html>
 	)
 }
